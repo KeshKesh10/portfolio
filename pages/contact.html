@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Rakesh Olanda</title>
+  <meta name="description" content="Contact Rakesh Olanda by email or social links." />
+  <meta property="og:title" content="Contact | Rakesh Olanda" />
+  <meta property="og:description" content="Email, GitHub, LinkedIn, and contact form." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://keshkesh10.github.io/portfolio/pages/contact.html" />
+  <meta property="og:image" content="https://keshkesh10.github.io/portfolio/assets/images/favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <header id="site-header"></header>
+  <main class="container">
+    <section class="grid two animate">
+      <article class="card">
+        <h1 class="section-title">Contact</h1>
+        <ul class="contact-list">
+          <li>Email: <a href="mailto:rakesh@example.com">rakesh@example.com</a></li>
+          <li>GitHub: <a href="https://github.com/KeshKesh10" target="_blank" rel="noopener noreferrer">github.com/KeshKesh10</a></li>
+          <li>LinkedIn: <a href="https://linkedin.com/in/rakesh-olanda" target="_blank" rel="noopener noreferrer">linkedin.com/in/rakesh-olanda</a></li>
+        </ul>
+      </article>
+      <article class="card">
+        <h2>Contact Form</h2>
+        <form class="form" action="#" method="post" onsubmit="event.preventDefault(); alert('Thanks! This frontend-only form is ready for backend integration.');">
+          <label for="name">Name</label>
+          <input class="input" id="name" name="name" type="text" required />
+          <label for="email">Email</label>
+          <input class="input" id="email" name="email" type="email" required />
+          <label for="message">Message</label>
+          <textarea class="input" id="message" name="message" rows="5" required></textarea>
+          <button class="btn primary" type="submit">Send</button>
+        </form>
+      </article>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../assets/js/app.js" defer></script>
+</body>
+</html>

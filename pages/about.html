@@ -16,34 +16,49 @@
 <body>
   <header id="site-header"></header>
   <main class="container">
-    <section class="animate">
-      <h1 class="section-title">About</h1>
-      <p>I'm Rakesh Olanda, a software engineer with a strong interest in cybersecurity engineering and applied AI systems. I build practical tools that improve visibility, automation, and decision-making.</p>
+    <section class="card about-story animate">
+      <aside class="photo-rotator photo-rotator-float" data-photo-rotator>
+        <img class="profile-photo rotating-photo is-active" data-rotating-photo src="../assets/images/rakesh-morehouse.jpg" alt="Rakesh Olanda standing at Morehouse College" />
+        <img class="profile-photo rotating-photo" data-rotating-photo src="../assets/images/rakesh-track.jpg" alt="Rakesh Olanda competing in track and field" />
+        <img class="profile-photo rotating-photo" data-rotating-photo src="../assets/images/rakesh-service.jpg" alt="Rakesh Olanda in military uniform near a helicopter" />
+        <img class="profile-photo rotating-photo" data-rotating-photo src="../assets/images/rakesh-team.jpg" alt="Rakesh Olanda standing with a fellow service member" />
+      </aside>
+      <article class="about-hero-copy">
+        <h1 class="section-title">About</h1>
+        <p>I'm Rakesh Olanda. I'm a senior at Morehouse College studying applied physics, and a lot of my energy goes into building software that is useful, secure, and grounded in real problems.</p>
+        <p class="muted">I'm originally from the Philippines and moved to Atlanta, Georgia at a young age. That experience shaped how I see opportunity, community, and the importance of building a future with intention.</p>
+        <p class="muted">What drives me is the mix of technical depth and practical impact. I like working on AI systems, cybersecurity, and full-stack products that make life easier for teams, leaders, and everyday users.</p>
+        <p class="muted">A lot of who I am comes from athletics, military service, and leadership spaces that taught me discipline, accountability, and how to stay steady under pressure. That shows up in the way I build, communicate, and work with people.</p>
+        <div class="identity-bar">
+          <span class="identity-chip">Morehouse College Senior</span>
+          <span class="identity-chip">Software Engineer</span>
+          <span class="identity-chip">Security Clearance: SECRET</span>
+        </div>
+      </article>
     </section>
 
     <section class="grid two animate">
       <article class="card">
         <h2>Education</h2>
-        <p class="muted">B.S. in Computer Science (Placeholder)</p>
+        <p class="muted">Morehouse College · Atlanta, GA</p>
+        <p>Bachelor of Science candidate graduating in December 2026.</p>
+        <p class="muted">Current senior majoring in Applied Physics with a software engineering focus. GPA: 3.5.</p>
+        <p class="muted">Coursework includes Computer Programming I and II, Data Structures, Generative AI, Software Engineering, Advanced Software Engineering, Full Stack Development, and Computer Ethics and Values.</p>
       </article>
       <article class="card">
-        <h2>Certifications</h2>
-        <ul>
-          <li>Security+ (Placeholder)</li>
-          <li>AWS Cloud Practitioner (Placeholder)</li>
-          <li>AI/ML Certification (Placeholder)</li>
-        </ul>
+        <h2>Leadership & Service</h2>
+        <p class="muted">NCAA Track and Field athlete, Secretary for the Morehouse Student-Athlete Advisory Committee, Army ROTC Cadet at Georgia State University, NCOIC of Ranger Challenge, and President of the 6lack Hats Cybersecurity Club.</p>
       </article>
     </section>
 
     <section class="animate">
       <h2 class="section-title">Skills & Technologies</h2>
       <div class="grid cards">
-        <article class="card"><h3>Programming Languages</h3><p class="muted">JavaScript, TypeScript, Python, Go, SQL</p></article>
-        <article class="card"><h3>Web Development</h3><p class="muted">HTML5, CSS3, React, REST APIs</p></article>
-        <article class="card"><h3>Cybersecurity</h3><p class="muted">Threat Modeling, SIEM, Hardening, Security Automation</p></article>
-        <article class="card"><h3>Cloud</h3><p class="muted">AWS, Docker, CI/CD, GitHub Actions</p></article>
-        <article class="card"><h3>Tools</h3><p class="muted">Git, Linux, VS Code, Burp Suite, Wireshark</p></article>
+        <article class="card"><h3>Programming</h3><p class="muted">Python, C++, Bash, PowerShell, JavaScript, TypeScript</p></article>
+        <article class="card"><h3>Full-Stack Development</h3><p class="muted">React, Node.js, REST APIs, Supabase, DynamoDB, Docker, Git</p></article>
+        <article class="card"><h3>AI Systems</h3><p class="muted">Vertex AI, Ollama, local LLM workflows, intent routing, AI-assisted internal tools</p></article>
+        <article class="card"><h3>Cybersecurity</h3><p class="muted">Kali Linux, Metasploit, Hydra, network defense, digital forensics, cryptography, reverse engineering</p></article>
+        <article class="card"><h3>Platforms & Tools</h3><p class="muted">Cloudflare, Google Cloud, HubSpot, Linux, GitHub, VS Code</p></article>
       </div>
     </section>
   </main>

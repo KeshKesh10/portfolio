@@ -96,6 +96,45 @@
     tick();
   }
 
+  const pageTitle = document.querySelector("main h1.section-title");
+  if (pageTitle) {
+    const fullTitle = pageTitle.textContent ? pageTitle.textContent.trim() : "";
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (fullTitle && !reduceMotion) {
+      const titleWords = [fullTitle];
+      let titleWordIndex = 0;
+      let titleCharIndex = 0;
+      let deletingTitle = false;
+
+      pageTitle.textContent = "";
+      pageTitle.classList.add("is-typing");
+
+      const tickTitle = () => {
+        const current = titleWords[titleWordIndex];
+        titleCharIndex += deletingTitle ? -1 : 1;
+        pageTitle.textContent = current.slice(0, titleCharIndex);
+
+        if (!deletingTitle && titleCharIndex === current.length) {
+          deletingTitle = true;
+          window.setTimeout(tickTitle, 950);
+          return;
+        }
+
+        if (deletingTitle && titleCharIndex === 0) {
+          deletingTitle = false;
+          titleWordIndex = (titleWordIndex + 1) % titleWords.length;
+          window.setTimeout(tickTitle, 180);
+          return;
+        }
+
+        window.setTimeout(tickTitle, deletingTitle ? 45 : 90);
+      };
+
+      tickTitle();
+    }
+  }
+
   const filterButtons = document.querySelectorAll("[data-filter-btn]");
   const projectCards = document.querySelectorAll("[data-project-card]");
   if (filterButtons.length && projectCards.length) {
@@ -114,4 +153,64 @@
       });
     });
   }
+
+  const contactForm = document.querySelector("[data-contact-form]");
+  if (contactForm) {
+    const contactStatus = contactForm.querySelector("[data-contact-status]");
+
+    contactForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const formData = new FormData(contactForm);
+      const name = String(formData.get("name") || "").trim();
+      const email = String(formData.get("email") || "").trim();
+      const message = String(formData.get("message") || "").trim();
+      if (contactStatus) {
+        contactStatus.textContent = "Sending message...";
+      }
+
+      const payload = new FormData();
+      payload.append("name", name);
+      payload.append("email", email);
+      payload.append("message", message);
+      payload.append("_subject", `Portfolio contact from ${name || "Website Visitor"}`);
+
+      fetch("https://formsubmit.co/ajax/rakeshbarker@gmail.com", {
+        method: "POST",
+        headers: {
+          Accept: "application/json"
+        },
+        body: payload
+      })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Submit failed");
+          }
+          return response.json();
+        })
+        .then(() => {
+          contactForm.reset();
+          if (contactStatus) {
+            contactStatus.textContent = "Message sent. Check your inbox for delivery confirmations.";
+          }
+        })
+        .catch(() => {
+          if (contactStatus) {
+            contactStatus.textContent = "Could not send right now. Try again or email me at rakeshbarker@gmail.com.";
+          }
+        });
+    });
+  }
+
+  const photoRotator = document.querySelector("[data-photo-rotator]");
+  const rotatingPhotos = Array.from(document.querySelectorAll("[data-rotating-photo]"));
+  if (photoRotator && rotatingPhotos.length > 1) {
+    let activeIndex = 0;
+    window.setInterval(() => {
+      rotatingPhotos[activeIndex].classList.remove("is-active");
+      activeIndex = (activeIndex + 1) % rotatingPhotos.length;
+      rotatingPhotos[activeIndex].classList.add("is-active");
+    }, 3500);
+  }
+
 })();

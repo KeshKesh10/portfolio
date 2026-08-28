@@ -41,5 +41,5 @@ README.md
 - Edit text/content directly in `index.html` and files in `/pages`.
 - Update styles in `assets/css/styles.css`.
 - Update interactions in `assets/js/app.js`.
-- Replace `assets/images/resume-placeholder.pdf` with your real resume.
+- Replace `assets/images/rakesh-olanda-resume.pdf` with your final resume export when needed.
 - Replace project links (`#`) with your GitHub and live demo URLs.

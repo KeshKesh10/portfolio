@@ -1,0 +1,66 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 3424 >>
+stream
+BT /F1 12 Tf 50 760 Td (Rakesh Olanda) Tj ET
+BT /F1 12 Tf 50 742 Td (rakesh.olanda@morehouse.edu | 470-263-8024 | Atlanta, GA) Tj ET
+BT /F1 12 Tf 50 724 Td (LinkedIn: linkedin.com/in/rakesh-olanda-615572204) Tj ET
+BT /F1 12 Tf 50 688 Td (Education) Tj ET
+BT /F1 12 Tf 50 670 Td (Morehouse College | B.S. Candidate in Applied Physics \(expected Dec 2026\)) Tj ET
+BT /F1 12 Tf 50 652 Td (GPA: 3.5 | Coursework: Software Engineering, Full Stack Development, Data Structures, Generative AI, Computer Ethics) Tj ET
+BT /F1 12 Tf 50 634 Td (Skills: Python, C++, Bash, PowerShell, Linux, JavaScript, React, Node.js, Supabase, Cloudflare, Google Cloud, Vertex AI) Tj ET
+BT /F1 12 Tf 50 598 Td (Projects) Tj ET
+BT /F1 12 Tf 50 580 Td (Nectar Command Center ? TypeScript, React, Supabase, Cloudflare, Google Cloud, Vertex AI, HubSpot) Tj ET
+BT /F1 12 Tf 50 562 Td (? Engineered an internal AI-powered operations platform that centralizes business data and automates workflows.) Tj ET
+BT /F1 12 Tf 50 544 Td (? Built secure integrations with HubSpot, Google Workspace, Vertex AI, Supabase, and Cloudflare.) Tj ET
+BT /F1 12 Tf 50 526 Td (? Developed AI-powered support for sponsor outreach, CRM management, and internal operations.) Tj ET
+BT /F1 12 Tf 50 490 Td (Stock Scope App ? React, Node.js, DynamoDB, Docker, REST APIs) Tj ET
+BT /F1 12 Tf 50 472 Td (? Designed DynamoDB data models and GSIs for scalable stock filtering and efficient query performance.) Tj ET
+BT /F1 12 Tf 50 454 Td (? Integrated market data APIs to calculate key investment metrics and earnings growth indicators.) Tj ET
+BT /F1 12 Tf 50 436 Td (? Improved deployment workflows through Docker containerization and GitHub repository management.) Tj ET
+BT /F1 12 Tf 50 400 Td (KAI ? Python, Ollama, Git) Tj ET
+BT /F1 12 Tf 50 382 Td (? Built a local AI assistant for task tracking, note management, and study support.) Tj ET
+BT /F1 12 Tf 50 364 Td (? Developed intent-classification and command-routing frameworks for natural-language actions.) Tj ET
+BT /F1 12 Tf 50 328 Td (Experience) Tj ET
+BT /F1 12 Tf 50 310 Td (AI Technology & Operations Intern, Nectar | June 2026 ? Present) Tj ET
+BT /F1 12 Tf 50 292 Td (? Developed an internal application that aggregates data from multiple platforms to simplify workflows.) Tj ET
+BT /F1 12 Tf 50 274 Td (? Built AI-powered internal tools and secure integrations with Google Cloud, Vertex AI, HubSpot, Supabase, and Cloudflare.) Tj ET
+BT /F1 12 Tf 50 238 Td (Cybersecurity Intern, Air Force Institute of Technology | July 2025 ? August 2025) Tj ET
+BT /F1 12 Tf 50 220 Td (? Learned vulnerability assessment and penetration testing using Kali Linux, Metasploit, Hydra, and EternalBlue.) Tj ET
+BT /F1 12 Tf 50 202 Td (? Configured and secured FTP servers and firewalls in virtual lab environments.) Tj ET
+BT /F1 12 Tf 50 166 Td (Sales Associate, Orangetheory Fitness | August 2023 ? Present) Tj ET
+BT /F1 12 Tf 50 148 Td (? Maintained records, supported customer care operations, and processed financial transactions.) Tj ET
+BT /F1 12 Tf 50 112 Td (Activities) Tj ET
+BT /F1 12 Tf 50 94 Td (? NCAA Track and Field athlete) Tj ET
+BT /F1 12 Tf 50 76 Td (? Secretary, Morehouse Student-Athlete Advisory Committee) Tj ET
+BT /F1 12 Tf 50 58 Td (? Army ROTC Cadet at Georgia State University) Tj ET
+BT /F1 12 Tf 50 40 Td (? NCOIC, ROTC Ranger Challenge) Tj ET
+BT /F1 12 Tf 50 22 Td (? President, 6lack Hats Cybersecurity Club) Tj ET
+
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+3787
+%%EOF

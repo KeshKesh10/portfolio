@@ -326,7 +326,9 @@ h1.section-title.is-typing::after {
 }
 
 .photo-rotator {
-  min-height: 100%;
+  position: relative;
+  aspect-ratio: 4 / 5;
+  min-height: 0;
 }
 
 .photo-rotator-float {
@@ -334,10 +336,13 @@ h1.section-title.is-typing::after {
 }
 
 .photo-rotator .profile-photo {
+  position: absolute;
+  inset: 0;
   aspect-ratio: auto;
   object-fit: contain;
   width: 100%;
-  max-height: 70vh;
+  height: 100%;
+  max-height: none;
   background: #0b0b0b;
 }
 

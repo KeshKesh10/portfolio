@@ -197,6 +197,11 @@ h1.section-title.is-typing::after {
   border: 1px solid var(--line);
   background: #121212;
 }
+.card img.img-logo {
+  object-fit: contain;
+  padding: 2rem;
+  background: #f5f7f5;
+}
 
 .profile-grid {
   display: grid;
